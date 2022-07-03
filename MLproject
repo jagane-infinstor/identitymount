@@ -1,0 +1,8 @@
+name: identitymount
+
+docker_env:
+  image:  identitymount
+
+entry_points:
+  main:
+    command: "python xformcode --alpha {alpha} --l1-ratio {l1_ratio}"
