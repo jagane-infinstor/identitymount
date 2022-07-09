@@ -7,8 +7,14 @@
 import os
 import mlflow
 import shutil
-from parallels_plugin import parallels_files_meta
+from parallels_plugin import parallels_files_meta, input_data_spec_to_json
 
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--input_data_spec', type=str, required=True)
+args = parser.parse_args()
+ids = input_data_spec_to_json(args.input_data_spec)
+print('Input Data Spec=' + str(ids))
 
 # In[5]:
 
