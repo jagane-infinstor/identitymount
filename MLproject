@@ -5,6 +5,4 @@ docker_env:
 
 entry_points:
   main:
-    parameters:
-        input_data_spec: {type: str}
-    command: "python xformcode --input_data_spec {input_data_spec}"
+    command: "python xformcode"
