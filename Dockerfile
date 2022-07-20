@@ -8,3 +8,4 @@ RUN pip install mlflow
 RUN pip install infinstor
 RUN pip install infinstor_mlflow_plugin
 RUN pip install parallels_plugin
+RUN pip list
